@@ -4,7 +4,7 @@
 # ========================
 #
 
-data=( ps aux | grep -i dropbear | awk '{print $2}');
+data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 echo "=============================================="
 echo "Usuarios [Dropbear]";
 echo "[x]";
@@ -22,7 +22,7 @@ do
 done
 echo "---";
 
-data=( ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}');
+data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
 
 
